@@ -1,14 +1,5 @@
-@meta-start
-@author Will Sayin
-@publish-date 2020-01-09
-@title Introducing the Dimple Blogging Platform
-@access-name dimple-intro
-@tags dimple, php, blog, cms
-@encoding markdown
-@hidden false
-@end meta
-
-##### The Damn Simple Blog
+The Damn Simple Blog
+--------------------
 
 ##### Index
 * [Introduction](#intro)
