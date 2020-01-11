@@ -16,7 +16,7 @@ Dimple gets its name because it's designed to be Damn Simple. The entire CMS liv
 
 
 ```php
-&lt;?php
+<?php
    require_once( './dimple/dimple.php' );
    $d = new dimple('./path/to/content/'); //Path is optional and defaults to './content/'
    $d->run();
@@ -46,15 +46,15 @@ Being a flat-file CMS, each file (Not including hidden files) in your content di
 ...etc
 ```
 
-**@meta-start** (*required*) - Must be the first line in the file. Starts the meta-data block.
-**@author** (*required*) - Who wrote the post?
-**@publish-date** (*required*) - When was the post published?
-**@title** (*required*) - What is the title to display?
-**@access-name** (*required*) - What is the url to the post?
-**@tags** (*required*) - What categories does this post fall under?
-**@encoding** (*optional*) - How is the post encoded? Current options are markdown (default) or plaintext.
-**@hidden** (*optional*) - Should the post be hidden from the index listing? (Defaults to false)
-**@end meta** (*required*) - Ends the meta-data block
+- **@meta-start** (*required*) - Must be the first line in the file. Starts the meta-data block.
+- - **@author** (*required*) - Who wrote the post?
+- **@publish-date** (*required*) - When was the post published?
+- **@title** (*required*) - What is the title to display?
+- **@access-name** (*required*) - What is the url to the post?
+- **@tags** (*required*) - What categories does this post fall under?
+- **@encoding** (*optional*) - How is the post encoded? Current options are markdown (default) or plaintext.
+- **@hidden** (*optional*) - Should the post be hidden from the index listing? (Defaults to false)
+- **@end meta** (*required*) - Ends the meta-data block
 
 ***Note:*** Dimple doesn't do any parsing or processing of content. I leave it to the user to choose their own library to use. I recommend using [marked.js](https://marked.js.org) to parse your markdown and [highlight.js](https://highlightjs.org/) to highlight any code.
 
