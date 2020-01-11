@@ -1,0 +1,110 @@
+* {
+   font-size: 16px;
+   padding: 0px;
+   margin: 0px;
+   font-size: 1em;
+   font-family: Arial, sans-serif;
+   box-sizing: border-box;
+   line-height: 1;
+   vertical-align: baseline;
+}
+
+h1 { font-size: 4.00em; font-weight: bold; }
+h2 { font-size: 3.50em; font-weight: bold; }
+h3 { font-size: 3.00em; font-weight: bold; }
+h4 { font-size: 2.50em; font-weight: bold; }
+h5 { font-size: 2.00em; font-weight: bold; }
+h6 { font-size: 1.25em; font-weight: bold; }
+h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0; }
+
+#page {
+   min-height: 100vh;
+   position: relative;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+   color: #445569;
+}
+
+#banner {
+   width: 100%;
+   background-color: rgba( 255, 255, 255, .90 );
+   color: #131d24;
+   border-bottom: 1px solid rgba( 200, 200, 200, .5 );
+   margin-bottom: 5vh;
+   padding-left: 25px;
+}
+
+#title {
+   height: 100%;
+   padding: 5px;
+}
+
+#content {
+   min-height: 100vh;
+   display: -webkit-flex;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: top;
+}
+
+#content-main {
+   width: 70%;
+}
+
+#content-side {
+   width: 30%;
+}
+
+#alltags {
+   padding: 60px;
+}
+
+#footer {
+   position: relative;
+   height: 15vh;
+   width: 100%;
+   background-color: #131d24;
+   color: #e5eff5;
+}
+
+#footer-content {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translatex( -50% ) translatey( -100% );
+   text-align: center;
+}
+
+a { color: orangered; text-decoration: none;}
+
+@media screen and ( max-width: 1080px )
+{
+   #content {
+      margin: 0px;
+      width: 99vw;
+   }
+
+   #content-main { width: 100%; }
+   #content-side { display: none; }
+
+   #dimple-output * {
+      width: 100%;
+      margin: 0px;
+      padding: 5px;
+   }
+   #banner {
+      text-align: center;
+      margin: 0px;
+   }
+
+   #title {
+      margin: 0px;
+   }
+}
+

@@ -1,0 +1,53 @@
+
+#dimple-output p.dimple-page
+{
+   padding: 25px;
+}
+
+hr.dimple-page {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 15px ; 
+   height: 0;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid rgba( 200, 200, 200, .5 );
+}
+
+#dimple-output div.dimple-page {
+   padding: 25px;
+   margin: 5px;
+}
+
+#dimple-output * {
+   word-break: break-word;
+   word-wrap: break-word;
+   white-space: pre-line;
+}
+
+#dimple-output li {
+   margin-left: 3em;
+}
+a.dimple-page:hover { text-decoration: underline; }
+
+#dimple-output pre > code {
+   position: relative;
+   margin-bottom: 10px; 
+   font-family: monospace, monospace; 
+   font-size: 12px; 
+   padding: 15px;
+   border: 1px solid grey;
+   white-space: pre;
+}
+#dimple-output h1 { font-size: 2.50em; font-weight: bold; }
+#dimple-output h2 { font-size: 2.25em; font-weight: bold; }
+#dimple-output h3 { font-size: 2.00em; font-weight: bold; }
+#dimple-output h4 { font-size: 1.75em; font-weight: bold; }
+#dimple-output h5 { font-size: 1.50em; font-weight: bold; }
+#dimple-output h6 { font-size: 1.25em; font-weight: bold; }
+#dimple-output h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0; }
+
