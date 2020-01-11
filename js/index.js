@@ -11,5 +11,4 @@ function markup() {
       c.innerHTML = marked.parser( tokens );
 
    };
-   hljs.initHighlighting();
 }

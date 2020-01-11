@@ -14,8 +14,6 @@
       <link href="css/style.css" rel="stylesheet">
       <link href="css/dimple.css" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-      <link rel="stylesheet" href="highlight/styles/an-old-hope.css">
-      <script src="highlight/highlight.pack.js"></script>
       <script src="js/index.js"></script>
    </head>
    <body onload='markup()'>
