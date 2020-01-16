@@ -47,7 +47,7 @@ Being a flat-file CMS, each file (Not including hidden files) in your content di
 ```
 
 - **@meta-start** (*required*) - Must be the first line in the file. Starts the meta-data block.
-- - **@author** (*required*) - Who wrote the post?
+- **@author** (*required*) - Who wrote the post?
 - **@publish-date** (*required*) - When was the post published?
 - **@title** (*required*) - What is the title to display?
 - **@access-name** (*required*) - What is the url to the post?

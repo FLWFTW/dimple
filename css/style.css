@@ -1,21 +1,13 @@
 * {
-   font-size: 16px;
-   padding: 0px;
-   margin: 0px;
-   font-size: 1em;
    font-family: Arial, sans-serif;
    box-sizing: border-box;
    line-height: 1;
    vertical-align: baseline;
 }
 
-h1 { font-size: 4.00em; font-weight: bold; }
-h2 { font-size: 3.50em; font-weight: bold; }
-h3 { font-size: 3.00em; font-weight: bold; }
-h4 { font-size: 2.50em; font-weight: bold; }
-h5 { font-size: 2.00em; font-weight: bold; }
-h6 { font-size: 1.25em; font-weight: bold; }
-h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0; }
+html, body, p, li, ul, ol { padding: 0px; margin: 0px; }
+
+h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1; letter-spacing: 0; margin: 0px; padding: 0px; }
 
 #page {
    min-height: 100vh;
@@ -36,6 +28,7 @@ h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0;
    border-bottom: 1px solid rgba( 200, 200, 200, .5 );
    margin-bottom: 5vh;
    padding-left: 25px;
+   padding: 0px;
 }
 
 #title {
@@ -49,8 +42,10 @@ h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0;
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: top;
+   width: 100%;
+   padding: 15px;
 }
 
 #content-main {
@@ -59,10 +54,6 @@ h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0;
 
 #content-side {
    width: 30%;
-}
-
-#alltags {
-   padding: 60px;
 }
 
 #footer {
@@ -83,20 +74,22 @@ h1, h2, h3, h4, h5, h6 { color: #536069; line-height: 1.38em; letter-spacing: 0;
 
 a { color: orangered; text-decoration: none;}
 
-@media screen and ( max-width: 1080px )
+@media screen and ( max-width: 800px )
 {
    #content {
       margin: 0px;
       width: 99vw;
+      flex-direction: column-reverse;
+      justify-content: flex-start;
    }
 
-   #content-main { width: 100%; }
-   #content-side { display: none; }
+   #content-main, #content-side { width: 100%; }
+
+   #content-side { margin-bottom: 2em; }
 
    #dimple-output * {
       width: 100%;
       margin: 0px;
-      padding: 5px;
    }
    #banner {
       text-align: center;
